@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bob's Recipe Collection - Featuring the famous Burger of the Day recipes and more from Bob's Burgers">
+    <meta name="keywords" content="Bob's Burgers, recipes, burger of the day, cooking, restaurant">
+    <title>Bob's Recipe Collection - Official Fan Recipes</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .burger-bg {
+            background: repeating-linear-gradient(
+                45deg,
+                #f59e0b,
+                #f59e0b 10px,
+                #fbbf24 10px,
+                #fbbf24 20px
+            );
+        }
+        @keyframes sizzle {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+        .sizzle-animation:hover {
+            animation: sizzle 0.5s infinite;
+        }
+        .recipe-card {
+            transition: transform 0.3s ease;
+        }
+        .recipe-card:hover {
+            transform: translateY(-5px);
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col bg-amber-50">
+    <header class="burger-bg text-white shadow-lg">
+        <div class="container mx-auto px-4 py-6">
+            <nav class="flex flex-col md:flex-row justify-between items-center">
+                <a href="/generated-website-1737070522199/" class="text-3xl font-bold sizzle-animation mb-4 md:mb-0">
+                    Bob's Recipe Collection
+                </a>
+                <ul class="flex space-x-6 text-lg">
+                    <li><a href="/generated-website-1737070522199/burgers.html" class="hover:text-amber-200">Burger Recipes</a></li>
+                    <li><a href="/generated-website-1737070522199/sides.html" class="hover:text-amber-200">Side Dishes</a></li>
+                    <li><a href="/generated-website-1737070522199/tips.html" class="hover:text-amber-200">Cooking Tips</a></li>
+                    <li><a href="/generated-website-1737070522199/submit.html" class="hover:text-amber-200">Submit Recipe</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="flex-grow container mx-auto px-4 py-8">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="md:col-span-2 bg-white rounded-lg shadow-md p-6">
+                <h1 class="text-3xl font-bold text-amber-700 mb-6">Featured Recipes</h1>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="recipe-card bg-amber-50 rounded-lg p-4 shadow">
+                        <h3 class="text-xl font-bold text-amber-800">"New Bacon-ings" Burger</h3>
+                        <p class="text-gray-600 mb-3">Fresh start, fresh burger with bacon</p>
+                        <a href="/generated-website-1737070522199/recipe/new-baconings.html" class="text-amber-600 hover:text-amber-800">View Recipe →</a>
+                    </div>
+                    
+                    <div class="recipe-card bg-amber-50 rounded-lg p-4 shadow">
+                        <h3 class="text-xl font-bold text-amber-800">"Mission A-Corn-Plished" Burger</h3>
+                        <p class="text-gray-600 mb-3">Corn salsa topped special</p>
+                        <a href="/generated-website-1737070522199/recipe/mission-acornplished.html" class="text-amber-600 hover:text-amber-800">View Recipe →</a>
+                    </div>
+                    
+                    <div class="recipe-card bg-amber-50 rounded-lg p-4 shadow">
+                        <h3 class="text-xl font-bold text-amber-800">"The Final Kraut Down" Burger</h3>
+                        <p class="text-gray-600 mb-3">Homemade sauerkraut burger</p>
+                        <a href="/generated-website-1737070522199/recipe/final-kraut-down.html" class="text-amber-600 hover:text-amber-800">View Recipe →</a>
+                    </div>
+                    
+                    <div class="recipe-card bg-amber-50 rounded-lg p-4 shadow">
+                        <h3 class="text-xl font-bold text-amber-800">"Sweet Home Avocado" Burger</h3>
+                        <p class="text-gray-600 mb-3">Guacamole and crispy onions</p>
+                        <a href="/generated-website-1737070522199/recipe/sweet-home-avocado.html" class="text-amber-600 hover:text-amber-800">View Recipe →</a>
+                    </div>
+                </div>
+            </div>
+            
+            <aside class="bg-white rounded-lg shadow-md p-6">
+                <h3 class="text-xl font-bold text-amber-700 mb-4">Recipe of the Day</h3>
+                <div class="bg-amber-50 p-4 rounded-lg">
+                    <h4 class="font-bold text-lg">"Don't Get Cream'd" Burger</h4>
+                    <p class="text-gray-600 mb-3">Topped with creamed spinach and mushrooms</p>
+                    <ul class="text-sm text-gray-700 mb-4">
+                        <li>• Prep Time: 20 mins</li>
+                        <li>• Cook Time: 15 mins</li>
+                        <li>• Difficulty: Medium</li>
+                    </ul>
+                    <a href="/generated-website-1737070522199/recipe/dont-get-creamd.html" class="inline-block bg-amber-600 text-white px-4 py-2 rounded hover:bg-amber-700">View Full Recipe</a>
+                </div>
+                
+                <div class="mt-6">
+                    <h4 class="font-bold text-lg text-amber-700 mb-3">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="/generated-website-1737070522199/categories.html" class="text-amber-600 hover:text-amber-800">Recipe Categories</a></li>
+                        <li><a href="/generated-website-1737070522199/seasonal.html" class="text-amber-600 hover:text-amber-800">Seasonal Specials</a></li>
+                        <li><a href="/generated-website-1737070522199/techniques.html" class="text-amber-600 hover:text-amber-800">Cooking Techniques</a></li>
+                        <li><a href="/generated-website-1737070522199/equipment.html" class="text-amber-600 hover:text-amber-800">Kitchen Equipment Guide</a></li>
+                    </ul>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <footer class="bg-amber-800 text-white mt-auto">
+        <div class="container mx-auto px-4 py-6">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <p>&copy; 2024 Bob's Recipe Collection</p>
+                </div>
+                <div class="flex space-x-4">
+                    <a href="/generated-website-1737070522199/about.html" class="hover:text-amber-200">About</a>
+                    <a href="/generated-website-1737070522199/contact.html" class="hover:text-amber-200">Contact</a>
+                    <a href="/generated-website-1737070522199/privacy.html" class="hover:text-amber-200">Privacy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

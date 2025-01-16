@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore Wonder Wharf - The iconic amusement park from Bob's Burgers. Learn about rides, attractions, and the wharf's colorful history.">
+    <meta name="keywords" content="Wonder Wharf, Bob's Burgers, Calvin Fischoeder, amusement park, Wagstaff Wharf">
+    <title>Wonder Wharf - Bob's Burgers Fan Hub</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .burger-bg {
+            background: repeating-linear-gradient(
+                45deg,
+                #f59e0b,
+                #f59e0b 10px,
+                #fbbf24 10px,
+                #fbbf24 20px
+            );
+        }
+        @keyframes sizzle {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+        .sizzle-animation:hover {
+            animation: sizzle 0.5s infinite;
+        }
+        .ferris-wheel {
+            width: 100px;
+            height: 100px;
+            border: 4px solid #f59e0b;
+            border-radius: 50%;
+            position: relative;
+            margin: 20px auto;
+        }
+        .ferris-wheel::before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 80%;
+            height: 4px;
+            background: #f59e0b;
+            transform-origin: left;
+            animation: rotate 10s linear infinite;
+        }
+        @keyframes rotate {
+            from { transform: translate(-50%, -50%) rotate(0deg); }
+            to { transform: translate(-50%, -50%) rotate(360deg); }
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col bg-amber-50">
+    <header class="burger-bg text-white shadow-lg">
+        <div class="container mx-auto px-4 py-6">
+            <nav class="flex flex-col md:flex-row justify-between items-center">
+                <a href="/generated-website-1737070522199/" class="text-3xl font-bold sizzle-animation mb-4 md:mb-0">
+                    Bob's Burgers
+                </a>
+                <ul class="flex space-x-6 text-lg">
+                    <li><a href="/generated-website-1737070522199/menu.html" class="hover:text-amber-200">Burger of the Day</a></li>
+                    <li><a href="/generated-website-1737070522199/characters.html" class="hover:text-amber-200">Characters</a></li>
+                    <li><a href="/generated-website-1737070522199/episodes.html" class="hover:text-amber-200">Episodes</a></li>
+                    <li><a href="/generated-website-1737070522199/wonderwharf.html" class="hover:text-amber-200">Wonder Wharf</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="flex-grow container mx-auto px-4 py-8">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="md:col-span-2 bg-white rounded-lg shadow-md p-6">
+                <h1 class="text-3xl font-bold text-amber-700 mb-4">Wonder Wharf: The Crown Jewel of Seymour's Bay</h1>
+                <div class="prose max-w-none">
+                    <div class="ferris-wheel mb-8"></div>
+                    
+                    <p class="mb-4">Welcome to Wonder Wharf, the historic amusement park owned by Calvin Fischoeder! This beloved landmark has been entertaining families since 1945, featuring classic rides, questionable safety standards, and unforgettable memories.</p>
+                    
+                    <h2 class="text-2xl font-bold text-amber-700 mt-6 mb-4">Featured Attractions</h2>
+                    <ul class="list-disc pl-6 mb-6">
+                        <li>The Scramble Pan - Our signature spinning ride</li>
+                        <li>Sea-Me-Now Ferris Wheel - Recently inspected... mostly</li>
+                        <li>Salad Spinner - Not just for vegetables anymore!</li>
+                        <li>The Wharf's Famous Ring Toss - Where the rings might actually fit</li>
+                    </ul>
+
+                    <h2 class="text-2xl font-bold text-amber-700 mt-6 mb-4">Special Events</h2>
+                    <div class="bg-amber-100 p-4 rounded-lg mb-6">
+                        <p class="font-bold">Coming Soon: Annual Wharf Festival!</p>
+                        <p>Join us for games, rides, and Mr. Fischoeder's mysterious new attraction.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <aside class="bg-white rounded-lg shadow-md p-6">
+                <h3 class="text-xl font-bold text-amber-700 mb-4">Wharf Information</h3>
+                <div class="space-y-4">
+                    <div class="border-b pb-4">
+                        <h4 class="font-bold">Hours of Operation</h4>
+                        <p>Monday - Sunday: 10AM - 10PM*</p>
+                        <p class="text-sm italic">*Weather and Mr. Fischoeder's mood permitting</p>
+                    </div>
+                    
+                    <div class="border-b pb-4">
+                        <h4 class="font-bold">Admission Prices</h4>
+                        <ul class="list-none">
+                            <li>Adults: $10</li>
+                            <li>Children: $8</li>
+                            <li>Seniors: $7</li>
+                            <li>Fischoeder's Friends: Free</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h4 class="font-bold">Quick Links</h4>
+                        <ul class="list-none space-y-2">
+                            <li><a href="/generated-website-1737070522199/wonderwharf/rides.html" class="text-amber-700 hover:text-amber-900">Ride List</a></li>
+                            <li><a href="/generated-website-1737070522199/wonderwharf/events.html" class="text-amber-700 hover:text-amber-900">Special Events</a></li>
+                            <li><a href="/generated-website-1737070522199/wonderwharf/history.html" class="text-amber-700 hover:text-amber-900">Wharf History</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <footer class="bg-amber-800 text-white mt-auto">
+        <div class="container mx-auto px-4 py-6">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <p>&copy; 2024 Bob's Burgers Fan Hub</p>
+                </div>
+                <div class="flex space-x-4">
+                    <a href="/generated-website-1737070522199/about.html" class="hover:text-amber-200">About</a>
+                    <a href="/generated-website-1737070522199/contact.html" class="hover:text-amber-200">Contact</a>
+                    <a href="/generated-website-1737070522199/legal.html" class="hover:text-amber-200">Legal</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

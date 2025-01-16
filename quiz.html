@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Which Belcher Are You? | Bob's Burgers Fan Hub</title>
+    <meta name="description" content="Take our fun personality quiz to discover which member of the Belcher family you're most like! Are you a Bob, Linda, Tina, Gene, or Louise?">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .burger-bg {
+            background: repeating-linear-gradient(
+                45deg,
+                #f59e0b,
+                #f59e0b 10px,
+                #fbbf24 10px,
+                #fbbf24 20px
+            );
+        }
+        @keyframes sizzle {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+        .sizzle-animation:hover {
+            animation: sizzle 0.5s infinite;
+        }
+        .character-card {
+            transition: transform 0.3s ease;
+        }
+        .character-card:hover {
+            transform: translateY(-5px);
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col bg-amber-50">
+    <header class="burger-bg text-white shadow-lg">
+        <div class="container mx-auto px-4 py-6">
+            <nav class="flex flex-col md:flex-row justify-between items-center">
+                <a href="/generated-website-1737070522199/" class="text-3xl font-bold sizzle-animation mb-4 md:mb-0">
+                    Bob's Burgers
+                </a>
+                <ul class="flex space-x-6 text-lg">
+                    <li><a href="/generated-website-1737070522199/menu.html" class="hover:text-amber-200">Burger of the Day</a></li>
+                    <li><a href="/generated-website-1737070522199/characters.html" class="hover:text-amber-200">Characters</a></li>
+                    <li><a href="/generated-website-1737070522199/episodes.html" class="hover:text-amber-200">Episodes</a></li>
+                    <li><a href="/generated-website-1737070522199/wonderwharf.html" class="hover:text-amber-200">Wonder Wharf</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="flex-grow container mx-auto px-4 py-8">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="md:col-span-2 bg-white rounded-lg shadow-md p-6">
+                <h1 class="text-3xl font-bold text-amber-700 mb-4">Which Belcher Are You?</h1>
+                <div class="prose max-w-none">
+                    <p class="text-lg mb-6">Ever wondered which member of the quirky Belcher family matches your personality? Take our fun quiz to find out!</p>
+                    
+                    <form method="GET" action="/generated-website-1737070522199/quiz-results" class="space-y-6">
+                        <div class="p-4 bg-amber-50 rounded-lg">
+                            <p class="font-bold mb-2">1. What's your ideal weekend activity?</p>
+                            <div class="space-y-2">
+                                <label class="block"><input type="radio" name="q1" value="bob" class="mr-2">Working on perfecting a new recipe</label>
+                                <label class="block"><input type="radio" name="q1" value="linda" class="mr-2">Singing and dancing with family</label>
+                                <label class="block"><input type="radio" name="q1" value="tina" class="mr-2">Writing friend fiction</label>
+                                <label class="block"><input type="radio" name="q1" value="gene" class="mr-2">Making music with household items</label>
+                                <label class="block"><input type="radio" name="q1" value="louise" class="mr-2">Planning an elaborate scheme</label>
+                            </div>
+                        </div>
+
+                        <div class="p-4 bg-amber-50 rounded-lg">
+                            <p class="font-bold mb-2">2. Pick a catchphrase:</p>
+                            <div class="space-y-2">
+                                <label class="block"><input type="radio" name="q2" value="bob" class="mr-2">"Oh my god..."</label>
+                                <label class="block"><input type="radio" name="q2" value="linda" class="mr-2">"Alright!"</label>
+                                <label class="block"><input type="radio" name="q2" value="tina" class="mr-2">"Uhhhhhhhhhh..."</label>
+                                <label class="block"><input type="radio" name="q2" value="gene" class="mr-2">"This is me now!"</label>
+                                <label class="block"><input type="radio" name="q2" value="louise" class="mr-2">"Time for chaos!"</label>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="w-full bg-amber-500 hover:bg-amber-600 text-white font-bold py-3 px-6 rounded-lg transition duration-300">
+                            Find Out Which Belcher You Are!
+                        </button>
+                    </form>
+                </div>
+            </div>
+            
+            <aside class="bg-white rounded-lg shadow-md p-6">
+                <h3 class="text-xl font-bold text-amber-700 mb-4">Popular Results</h3>
+                <div class="space-y-4">
+                    <div class="character-card p-3 bg-amber-50 rounded-lg">
+                        <h4 class="font-bold">Bob Belcher</h4>
+                        <p class="text-sm">Hardworking, passionate, slightly neurotic</p>
+                    </div>
+                    <div class="character-card p-3 bg-amber-50 rounded-lg">
+                        <h4 class="font-bold">Linda Belcher</h4>
+                        <p class="text-sm">Enthusiastic, supportive, loves to sing</p>
+                    </div>
+                    <div class="character-card p-3 bg-amber-50 rounded-lg">
+                        <h4 class="font-bold">Tina Belcher</h4>
+                        <p class="text-sm">Awkward, romantic, horse-loving</p>
+                    </div>
+                    <div class="character-card p-3 bg-amber-50 rounded-lg">
+                        <h4 class="font-bold">Gene Belcher</h4>
+                        <p class="text-sm">Musical, food-loving, dramatic</p>
+                    </div>
+                    <div class="character-card p-3 bg-amber-50 rounded-lg">
+                        <h4 class="font-bold">Louise Belcher</h4>
+                        <p class="text-sm">Clever, mischievous, bunny ears enthusiast</p>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <footer class="bg-amber-800 text-white mt-auto">
+        <div class="container mx-auto px-4 py-6">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <p>&copy; 2024 Bob's Burgers Fan Hub</p>
+                </div>
+                <div class="flex space-x-4">
+                    <a href="/generated-website-1737070522199/about.html" class="hover:text-amber-200">About</a>
+                    <a href="/generated-website-1737070522199/contact.html" class="hover:text-amber-200">Contact</a>
+                    <a href="/generated-website-1737070522199/legal.html" class="hover:text-amber-200">Legal</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

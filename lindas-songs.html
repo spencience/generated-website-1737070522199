@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linda's Song Book | Bob's Burgers Fan Hub</title>
+    <meta name="description" content="Explore Linda Belcher's complete collection of spontaneous songs, including lyrics, occasions, and memorable musical moments from Bob's Burgers.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .burger-bg {
+            background: repeating-linear-gradient(
+                45deg,
+                #f59e0b,
+                #f59e0b 10px,
+                #fbbf24 10px,
+                #fbbf24 20px
+            );
+        }
+        @keyframes sizzle {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+        .sizzle-animation:hover {
+            animation: sizzle 0.5s infinite;
+        }
+        .music-note {
+            display: inline-block;
+            animation: float 2s infinite ease-in-out;
+        }
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col bg-amber-50">
+    <header class="burger-bg text-white shadow-lg">
+        <div class="container mx-auto px-4 py-6">
+            <nav class="flex flex-col md:flex-row justify-between items-center">
+                <a href="/generated-website-1737070522199/" class="text-3xl font-bold sizzle-animation mb-4 md:mb-0">
+                    Bob's Burgers
+                </a>
+                <ul class="flex space-x-6 text-lg">
+                    <li><a href="/generated-website-1737070522199/menu.html" class="hover:text-amber-200">Burger of the Day</a></li>
+                    <li><a href="/generated-website-1737070522199/characters.html" class="hover:text-amber-200">Characters</a></li>
+                    <li><a href="/generated-website-1737070522199/episodes.html" class="hover:text-amber-200">Episodes</a></li>
+                    <li><a href="/generated-website-1737070522199/wonderwharf.html" class="hover:text-amber-200">Wonder Wharf</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="flex-grow container mx-auto px-4 py-8">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="md:col-span-2 bg-white rounded-lg shadow-md p-6">
+                <h1 class="text-3xl font-bold text-amber-700 mb-4">Linda's Song Book <span class="music-note">🎵</span></h1>
+                <div class="prose max-w-none">
+                    <section class="mb-8">
+                        <h2 class="text-2xl font-bold text-amber-600 mb-4">Featured Songs</h2>
+                        <div class="grid gap-4">
+                            <article class="border-b border-amber-200 pb-4">
+                                <h3 class="text-xl font-semibold">Harry Truman Song</h3>
+                                <p class="italic text-gray-600">"Here goes the hair, there goes the hair, where is Harry Truman? He's dead in the ground, he's dead in the ground, he's dead dead dead dead dead!"</p>
+                            </article>
+                            <article class="border-b border-amber-200 pb-4">
+                                <h3 class="text-xl font-semibold">Thanksgiving Song</h3>
+                                <p class="italic text-gray-600">"Pass the cranberry sauce, we're having mashed potatoes! Oh the turkey looks great..."</p>
+                            </article>
+                            <article class="border-b border-amber-200 pb-4">
+                                <h3 class="text-xl font-semibold">Running Down the Gutter Song</h3>
+                                <p class="italic text-gray-600">"Running down the gutter with a piece of bread and butter, diarrhea *pfft pfft* diarrhea *pfft pfft*"</p>
+                            </article>
+                        </div>
+                    </section>
+
+                    <section class="mb-8">
+                        <h2 class="text-2xl font-bold text-amber-600 mb-4">Submit Your Favorite Linda Song</h2>
+                        <form action="/generated-website-1737070522199/submit-song" method="GET" class="space-y-4">
+                            <div>
+                                <label class="block text-gray-700 mb-2" for="songTitle">Song Title</label>
+                                <input type="text" id="songTitle" name="songTitle" class="w-full p-2 border border-amber-300 rounded">
+                            </div>
+                            <div>
+                                <label class="block text-gray-700 mb-2" for="lyrics">Lyrics</label>
+                                <textarea id="lyrics" name="lyrics" rows="4" class="w-full p-2 border border-amber-300 rounded"></textarea>
+                            </div>
+                            <button type="submit" class="bg-amber-500 text-white px-4 py-2 rounded hover:bg-amber-600">Submit Song</button>
+                        </form>
+                    </section>
+                </div>
+            </div>
+            
+            <aside class="bg-white rounded-lg shadow-md p-6">
+                <h3 class="text-xl font-bold text-amber-700 mb-4">Linda's Greatest Hits</h3>
+                <ul class="space-y-3">
+                    <li><a href="/generated-website-1737070522199/songs/valentines.html" class="text-amber-600 hover:text-amber-800">Valentine's Day Songs</a></li>
+                    <li><a href="/generated-website-1737070522199/songs/bathroom.html" class="text-amber-600 hover:text-amber-800">Bathroom Songs</a></li>
+                    <li><a href="/generated-website-1737070522199/songs/holiday.html" class="text-amber-600 hover:text-amber-800">Holiday Collection</a></li>
+                    <li><a href="/generated-website-1737070522199/songs/work.html" class="text-amber-600 hover:text-amber-800">Work Time Tunes</a></li>
+                </ul>
+                
+                <div class="mt-6 p-4 bg-amber-100 rounded">
+                    <h4 class="font-bold text-amber-700 mb-2">Did You Know?</h4>
+                    <p class="text-sm">Linda creates an average of 3 spontaneous songs per episode! That's over 300 unique tunes throughout the series!</p>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <footer class="bg-amber-800 text-white mt-auto">
+        <div class="container mx-auto px-4 py-6">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <p>&copy; 2024 Bob's Burgers Fan Hub</p>
+                </div>
+                <div class="flex space-x-4">
+                    <a href="/generated-website-1737070522199/about.html" class="hover:text-amber-200">About</a>
+                    <a href="/generated-website-1737070522199/contact.html" class="hover:text-amber-200">Contact</a>
+                    <a href="/generated-website-1737070522199/legal.html" class="hover:text-amber-200">Legal</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
